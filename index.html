@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">  
+<style>
+    /* CSS Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/abes.jpg');
+        /* height: 10000px; */
+        color: white;
+        font-family: "Sofia", sans-serif;
+    }
+
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red;  */
+        position: absolute;
+        left: 20px;
+        top: 20px; 
+    }
+    .left img{
+        width: 50px;
+        position:relative ; /*5to move image left first set the position*/
+        left: 41px;
+         /* filter: invert(100%); */
+         
+    }
+    .left div{
+        text-align: center;
+        font-size: 20px;
+       line-height: 10px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        /*1st condition tocenter*/
+        width: 42%;
+        /*2nd condition*/
+        margin: 20px auto;
+        /*to center  3rd condition*/
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+        
+    }
+    .navbar li a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 34px 20px;
+        font-size: 25px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;      /*to have cursor on it */
+        font-family: "Sofia", sans-serif;   
+    }
+    .btn:hover{
+        background-color: rgb(29, 27, 27);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 108px 81px;
+        padding: 74px;
+        width: 53%;
+        /* display: block; */
+        border-radius: 31px;
+    }
+    .form-group input{
+        border: 2px solid black;
+    text-align: center;
+    display: block;
+    width: 507px;
+    padding: 1px;
+    font-size: 25px;
+    margin: 11px auto;  /*display is block and width is set therefor auto */
+    border-radius: 10px;
+    font-family: "Sofia", sans-serif;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        /* text-align: center; this will not work to center the button */
+         display: block;
+         width: 47.5%;
+         margin: 32px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box foe logo -->
+        <div class="left">
+            <img src="img/dumb.jpg" alt="">
+            <div>Harry's Fitness</div>
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us </a> </li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+             <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of delhi now</h1>
+        <form action="noaction.php">  <!-- since no backend  -->
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
